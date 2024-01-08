@@ -57,7 +57,7 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
     echo ${callback_query_from_id} >> lista
     # - ENVIA O SSH
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "🤩 <b>LOGIN CRIADO</b> 🤩 \r\n\r\n🚻 <b>USUARIO:</b> <code>$usuario</code>\r\n🔐 <b>SENHA:</b> <code>$senha</code>\r\n❌ <b>LIMITE:</b> 1\r\n<b>⏰ VALIDADE:</b> $dias Dias \r\n\r\n<b>BAIXE O APLICATIVO MAIS RECENTE NO NOSSO GRUPO E FIQUE POR DENTRO DAS NOVIDADES.</b>\r\n\r\n<b>ACESSE O NOSSO GRUPO</b> @modderajudagrupo\r\n\r\n<b>ACESSE O NOSSO CANAL</b> @modderajudacanal")" \
+    --text "$(echo -e "🤩 <b>LOGIN CRIADO</b> 🤩 \r\n\r\n🚻 <b>USUARIO:</b> <code>$usuario</code>\r\n🔐 <b>SENHA:</b> <code>$senha</code>\r\n❌ <b>LIMITE:</b> 1\r\n<b>⏰ VALIDADE:</b> $dias Dias \r\n\r\n<b>BAIXE O APLICATIVO MAIS RECENTE NO NOSSO GRUPO E FIQUE POR DENTRO DAS NOVIDADES.</b>\r\n\r\n<b>ACESSE O NOSSO GRUPO</b> @maudavpn\r\n\r\n<b>ACESSE O NOSSO CANAL</b> @modderajudacanal")" \
     --parse_mode html
     return 0
 }
@@ -67,7 +67,7 @@ buylogin() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
         --text "♻️ AGUARDE..."
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "<b>MUITO OBRIGADO POR CONFIAR EM MEU TRABALHO</b>\r\n<b>FAÇA O PIX DE 10$ REAIS E ENVIE O COMPROVANTE PARA</b>👉 @donomodderajuda 👈\r\n<b>👇 CHAVE PIX 👇</b>\r\n<b>aae3eba8-f1f8-4911-a26b-0f02d611317c</b> aae3eba8-f1f8-4911-a26b-0f02d611317c ")" \
+    --text "$(echo -e "<b>MUITO OBRIGADO POR CONFIAR EM MEU TRABALHO</b>\r\n<b>FAÇA O PIX DE 10$ REAIS E ENVIE O COMPROVANTE PARA</b>👉 @mauvadao 👈\r\n<b>👇 CHAVE PIX 👇</b>\r\n<b>aae3eba8-f1f8-4911-a26b-0f02d611317c</b> aae3eba8-f1f8-4911-a26b-0f02d611317c ")" \
     --parse_mode html
     return 0
 }
@@ -77,7 +77,7 @@ enviarapp() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
         --text "♻️ ENVIANDO APLICATIVO, AGUARDE..."
     ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
-        --document "@/root/donomodderajuda.apk" \
+        --document "@/root/mauvadao.apk" \
     return 0
 }
     
@@ -86,7 +86,7 @@ buymod() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
         --text "♻️ AGUARDE..."
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-    --text "$(echo -e "<b>COMPRE MODS DO CONECTA5G POR UM PREÇO ACESSÍVEL, MODS LINDOS E LEVES.</b>\r\n\r\n<b>ACESSE O NOSSO CANAL E ESCOLHA O MODELO</b>👉 @modderajudacanal\r\n\r\n<b>CHAME NO PV O CRIADOR DOS MELHORES MODS</b>👉 @donomodderajuda")" \
+    --text "$(echo -e "<b>BAIXE MODS DO CONECTAG POR GRATIS, MODS LINDOS E LEVES.</b>\r\n\r\n<b>ACESSE O NOSSO CANAL E ESCOLHA O MODELO</b>👉 https://t.me/tgdomau\r\n\r\n<b>DONO: </b>👉 @mauvadao")" \
     --parse_mode html
     return 0
 }
@@ -99,10 +99,10 @@ obapix() {
         --text "$(echo -e "<b>MUITO OBRIGADO POR APOIAR O NOSSO PROJETO.</b>\r\n\r\n<b>DOE QUALQUER QUANTIA PARA NOS AJUDAR A CONTINUAR COM ESSE E OUTROS PROJETOS.</b>")" \
     --parse_mode html
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-        --text "👇 CHAVE PIX EM NOME DE : <b>Brendel</b>👇\r\n\r\n<b>Toque na chave abaixo para copiá-la</b>" \
+        --text "👇 CHAVE PIX EM NOME DE : <b>MauDaVpn</b>👇\r\n\r\n<b>Toque na chave abaixo para copiá-la</b>" \
         --parse_mode html
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-        --text "<code>aae3eba8-f1f8-4911-a26b-0f02d611317c</code>" \
+        --text "<code>CHAVE_PIX_AQUI</code>" \
         --parse_mode html
     return 0
 }
