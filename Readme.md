@@ -1,6 +1,6 @@
 # instalador Scriptssh 1
 ```
-apt-get update -y; apt-get upgrade -y;wget https://raw.githubusercontent.com/mauvadao4g/WEBSOCKT-SECURIT2024/main/install.sh ; chmod 777 Plus ; ./Plus
+apt-get update -y; apt-get upgrade -y;wget https://raw.githubusercontent.com/mauvadao4g/WEBSOCKT-SECURIT2024/main/install.sh ; chmod 777 Plus ; ./install.sh
 
 ```
 # instalador Scriptssh 2
